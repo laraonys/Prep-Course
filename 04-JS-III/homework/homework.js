@@ -145,10 +145,10 @@ function diaDeLaSemana(numeroDeDia) {
   //Realiza una función que dado el número del día de la semana, retorne: Es fin de semana
   //si el día corresponde a Sábado o Domingo y “Es dia Laboral” en caso contrario. 
   //Escribe tu código aquí   
-  if (numeroDeDia === 1 || numeroDeDia === 7) {
-    return 'Es fin de semana';
-  } 
-    return 'Es día laboral';
+  if(numeroDeDia === 1 || numeroDeDia === 7 ){
+    return "Es fin de semana";
+  }
+  return "Es dia Laboral";
 
 } 
 
@@ -172,10 +172,10 @@ function todosIguales(arreglo) {
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí  
   
-  for(var i = 0; i < arreglo.length; i++) {
-  if(arreglo[i] !== arreglo[i+1]) {
-    return false;
-  }
+  for(var i = 0; i < arreglo.length - 1; i++) {
+    if(arreglo[i] !== arreglo[i+1]) {
+      return false;
+    }
   }
   return true;
 } 
